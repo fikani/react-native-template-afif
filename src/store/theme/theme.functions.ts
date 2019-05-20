@@ -1,4 +1,3 @@
-import { func } from "prop-types";
 import { StyleSheet } from "react-native";
 import { AppStore, store } from "../index";
 import { AppTheme, FontSize } from "./types";

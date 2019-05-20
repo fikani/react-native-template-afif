@@ -1,5 +1,4 @@
 import * as React from "react";
-import { ReactNode } from "react";
 import {
   Text as NativeText,
   TextProps as NativeTextProps,
@@ -15,7 +14,7 @@ import {
 } from "../../store/theme/types";
 
 interface TextProps extends NativeTextProps {
-  children: ReactNode;
+  children: React.ReactNode;
   colorScheme?: "primary" | "secondary" | "text";
   color?: keyof ColorScheme;
   size?: keyof FontSize;
@@ -24,15 +23,15 @@ interface TextProps extends NativeTextProps {
 }
 
 const TextComponent = ({
-  children,
-  colorScheme = "text",
-  color = "main",
-  size,
-  weight,
-  style,
-  theme,
-  ...rest
-}: TextProps) => {
+   children,
+   colorScheme = "text",
+   color = "main",
+   size,
+   weight,
+   style,
+   theme,
+   ...rest
+  }: TextProps) => {
   const defaultStyle: TextStyle = {
     fontSize: size ? theme.fontSize[size] : theme.fontSize.default,
     fontFamily: weight ? theme.fontFamily[weight] : theme.fontFamily.default,
