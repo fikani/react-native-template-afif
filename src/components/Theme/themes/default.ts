@@ -9,9 +9,9 @@ import {
 export const fontSize: FontSize = fontSizeCreator(16);
 
 export const fontFamily: FontFamily = {
-  default: "Rubik",
-  light: "Rubik Light",
-  bold: "Rubik Medium"
+  default: "System",
+  light: "System",
+  bold: "System"
 };
 
 const palette: Palette = {
