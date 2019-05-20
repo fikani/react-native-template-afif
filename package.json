@@ -1,34 +1,4 @@
 {
   "name": "react-native-template-afif",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "devtools": "react-devtools"
-  },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "transform": {
-      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
-      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "testPathIgnorePatterns": [
-      "\\.snap$",
-      "<rootDir>/node_modules/"
-    ],
-    "cacheDirectory": ".jest/cache"
-  },
-  "rnpm": {
-    "assets": [
-      "assets/fonts/Rubik"
-    ]
-  }
+  "version": "0.0.3"
 }
