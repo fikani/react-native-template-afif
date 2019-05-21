@@ -9,13 +9,12 @@ import thunkMiddleware from "redux-thunk";
 import { themeReducer } from "./theme/reducers";
 
 const rootReducer = combineReducers({
-  // navigation: navigationReducer,
   theme: themeReducer
 });
 
 export type AppStore = ReturnType<typeof rootReducer>;
 const animationMiddleware: Middleware = () => next => action => {
-  if (UIManager.setLayoutAnimationEnabledExperimental !== null) {
+  if (UIManager.setLayoutAnimationEnabledExperimental) {
     UIManager.setLayoutAnimationEnabledExperimental(true);
   }
   LayoutAnimation.spring();

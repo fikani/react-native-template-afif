@@ -23,15 +23,15 @@ interface TextProps extends NativeTextProps {
 }
 
 const TextComponent = ({
-   children,
-   colorScheme = "text",
-   color = "main",
-   size,
-   weight,
-   style,
-   theme,
-   ...rest
-  }: TextProps) => {
+  children,
+  colorScheme = "text",
+  color = "main",
+  size,
+  weight,
+  style,
+  theme,
+  ...rest
+}: TextProps) => {
   const defaultStyle: TextStyle = {
     fontSize: size ? theme.fontSize[size] : theme.fontSize.default,
     fontFamily: weight ? theme.fontFamily[weight] : theme.fontFamily.default,
